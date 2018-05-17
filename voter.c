@@ -72,6 +72,18 @@ void voter_init(unsigned int number) {
 
 //verification for new voter validity
 //no other voter has that number
+//verification for new voter validity. Check that no other voter has that number
+unsigned int voter_validate(unsigned int num) {
+    int i;
+    int result;
+    for (i = 0; i < database->length; i = i + 1) {
+        if (database[i].number == num) {
+            result = 0; 
+        }
+        else {
+            result = 1;
+        }
+        return result;
 
 //verification of correct passcode
 
