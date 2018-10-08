@@ -1,12 +1,12 @@
-“Voting Validator” Proposal
-Overview
+<h1>“Voting Validator”</h1
+<h2>Overview</h2>
 Voting, especially in democracies, is a vital part of society but oftentimes not implemented in a
 secure and efficient way. The overall function of this project will be to implement a fair and
 secret ballot system. Voters will each receive a unique passcode that they must input correctly in
 order to be given the option to vote. Once they have correctly inputted their specific passcode,
 they can cast their vote, which will not be visible to anyone (other than the vote administrator)
 until the entire voting body has cast their votes.
-System Description
+<h2>System Description</h2>
 The system will consist of an alphanumeric keypad, a Bluetooth connection (potentially
 implemented through an Arduino), an LED display, and a FRDM board. The user flow will be as
 follows:
@@ -36,9 +36,8 @@ the voter is casting their vote
 ● Making passcodes alphanumeric for more security
 ● Sending a push notification to the user once their passcode has been inputted correctly to
 verify that they are in fact using their own password, and not someone else
-Major Technical Tasks and Testing
+<h2>Major Technical Tasks and Testing</h2>
 To implement the above algorithm, the major technical tasks we must achieve are:
-Caitlin Stanton (cs968) and Orby Egboga (coe7)
 ● Connecting the alphanumeric keypad to the FRDM board by writing code to ensure that
 the FRDM board recognizes and processes inputs to the keypad
 ● Establishing a Bluetooth connection to the user’s specific device so that they can receive
@@ -58,7 +57,7 @@ one that is attributed to their account
 inputted or all voters have voted
 ● Ensuring that the first account to be registered is considered the admin account, and that
 no other accounts have the privileges associated with being an admin
-Development Timeline with Milestones
+<h2>Development Timeline with Milestones</h2>
 During the week starting 28th of March, we plan to purchase all external hardware
 components that we need to implement this device. We will start writing pseudocode during this
 week as we wait for our hardware to arrive, including the skeleton for voter accounts and voting.
@@ -66,14 +65,14 @@ During the next week starting 6th of May, we plan to spend the entire week writi
 actual code, incorporating the hardware, and debugging to make our basic functions work.
 Finally, during the last week starting on the 13th of May, we plan to try to implement
 extra capabilities to make our device more functional and do final debugging and testing.
-Work Distribution Plan
+<h2>Work Distribution Plan</h2>
 We plan to work together at all times. Code review and driving will be done by the partner
 who is not doing the programming.
-Bill of Materials
+<h2>Bill of Materials</h2>
 ● HC-05 Bluetooth module (BT400_B6)
 ● SunFounder IIC I2C TWI Serial 2004 20x4 LCD Module Shield
 ● WIshioT 16 key membrane matrix keyboard keypad
-System Schematic Diagram
+<h2>System Schematic Diagram</h2>
 ● Bluetooth requires 3.3V, GND, TX and RX plus a CMD (Command) pins for a basic
 configuration
 ● LCD display requires a power and ground pin, as well as data pins
