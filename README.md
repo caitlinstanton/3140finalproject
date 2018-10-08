@@ -1,4 +1,4 @@
-<h1>“Voting Validator”</h1
+<h1>“Voting Validator”</h1>
 <h2>Overview</h2>
 Voting, especially in democracies, is a vital part of society but oftentimes not implemented in a
 secure and efficient way. The overall function of this project will be to implement a fair and
